@@ -33,3 +33,16 @@ function displayResults(characters) {
     results.appendChild(characterElement);
   });
 }
+const api = new marvel.MarvelAPI();
+
+// Use the MarvelAPI class to get a list of characters
+const characters = await api.getCharacters();
+
+// For each character, get the character's image and name
+for (const character of characters) {
+  const image = await character.getImage();
+  const name = character.getName();
+
+  // Display the character's image and name on the screen
+  console.log(`${name}: ${image}`);
+}
