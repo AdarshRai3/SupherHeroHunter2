@@ -1,0 +1,25 @@
+/* styles.css */
+body {
+    font-family: sans-serif;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
+  .character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .character img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .character h2 {
+    margin: 0;
+  }
+  
